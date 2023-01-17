@@ -91,3 +91,15 @@ ul {
     text-align: left; 
     margin-bottom: 5rem;
 }
+
+ol {  
+    list-style: none;
+  }
+  
+  ol > li {
+    counter-increment: listcounter;
+  }
+  
+  ol > li::before {
+    content: counter(listcounter) ")";
+  }
